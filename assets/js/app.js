@@ -55,22 +55,26 @@ function filerSort() {
         let selectTag = e.options[e.selectedIndex].value
         if (selectSort === 'Tăng') {
             if (selectTag === 'Họ & tên') {
-                let increase = formData.sort()
-                console.log(selectTag)
+                let increase = formData.sort((n1, n2) => {
+                    let a = n1.fullname.toLowerCase()
+                    let b = n2.fullname.toLowerCase()
+                    return a === b ? 0 : a > b ? 1 : -1
+                })
                 renderForm(increase)
             } if (selectTag === 'Năm sinh') {
-                let increase = formData.sort()
-                console.log(selectTag)
-
+                let increase = formData.sort((n1, n2) => n1.years - n2.years)
                 renderForm(increase)
             } if (selectTag === 'Giới tính') {
-                let increase = formData.sort()
+                let increase = formData.sort((n1, n2) => {
+                    let a = n1.gender.toLowerCase()
+                    let b = n2.gender.toLowerCase()
+                    return a === b ? 0 : a > b ? 1 : -1
+                })
                 renderForm(increase)
             } if (selectTag === 'Thời gian tạo') {
-                let increase = formData.sort()
+                let increase = formData.sort((n1, n2) => n1.today > n2.today ? 1 : -1)
                 renderForm(increase)
             }
-            console.log("tăng")
         } else {
             if (selectTag === 'Họ & tên') {
                 let increase = formData.reverse()
@@ -85,7 +89,6 @@ function filerSort() {
                 let increase = formData.reverse()
                 renderForm(increase)
             }
-            console.log("giảm")
         }
     } 
 }
