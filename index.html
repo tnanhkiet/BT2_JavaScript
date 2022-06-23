@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <title>BT2 JavaScript</title>
+</head>
+<body>
+    <div class="main">
+        <form action="" class="form__left" onsubmit="return handleCreateForm()">
+            <div class="form__left-item">
+                <label for="fullname" class="form__left-tag">Họ và tên</label>
+                <input name="fullname" type="text" placeholder="Nhập họ và tên" class="form__left-input">
+            </div>
+            <div class="form__left-list">
+                <div class="form__left-item">
+                    <label for="years" class="form__left-tag">Năm sinh</label>
+                    <select name="years" id="form__left-years" class="form__left-select"></select>
+                </div>
+                <div class="form__left-item">
+                    <p class="form__left-tag">Giới tính</p>
+                    <input type="radio" id="nam" name="gender" value="Nam" class="form__left-radio">
+                    <label for="nam" class="form__left-label">Nam</label>
+                    <input type="radio" id="nu" name="gender" value="Nữ" class="form__left-radio">
+                    <label for="nu" class="form__left-label">Nữ</label>
+                    <input type="radio" id="khac" name="gender" value="Khác" class="form__left-radio">
+                    <label for="khac" class="form__left-label">Khác</label>
+                </div>
+            </div>
+            <button class="form__left-btn">Nhập</button>
+        </form>
+
+        <form action="" class="form__right">
+            <p class="form__right-heading">Danh sách đã nhập</p>
+            <div class="form__right-list">
+                <div class="form__right-item">
+                    <label for="" class="form__right-tag">Lọc:</label>
+                    <select name="" id="form__right-years" class="form__right-select">
+                        <div>
+                            <option value="Years">Năm sinh</option>
+                        </div>
+                    </select>
+                    <select name="" id="form__right-gender" class="form__right-select" placeholder="Giới tính">
+                        <option value="Gender">Giới tính</option>
+                        <option value="Nam">Nam</option>
+                        <option value="Nữ">Nữ</option>
+                        <option value="Khác">Khác</option>
+                    </select>
+                </div>
+                <div class="form__right-item">
+                    <label for="" class="form__right-tag">Sắp xếp:</label>
+                    <select name="" id="form__right-select-tag" class="form__right-select">
+                        <option value="Họ & tên">Họ & tên</option>
+                        <option value="Năm sinh">Năm sinh</option>
+                        <option value="Giới tính">Giới tính</option>
+                        <option value="Thời gian tạo">Thời gian tạo</option>
+                    </select>
+                    <select name="" id="form__right-sort" class="form__right-select">
+                        <option value="Tăng">Tăng</option>
+                        <option value="Giảm">Giảm</option>
+                    </select>
+                </div>
+            </div>
+            <table class="form__right-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Họ & tên</th>
+                        <th>Năm sinh</th>
+                        <th>Giới tính</th>
+                        <th>Thời gian tạo</th>
+                    </tr>
+                </thead>
+                <tbody id="form__right-table">
+
+                </tbody>
+            </table>
+        </form>
+        <script type="text/javascript" src="./assets/js/app.js"></script>
+    </div>
+</body>
+</html>

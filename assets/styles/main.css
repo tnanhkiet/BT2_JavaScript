@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.form__left {
+  padding: 50px 20px;
+  width: 40%;
+  border-right: 1px solid #ccc;
+}
+
+.form__left-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form__left-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0;
+}
+
+.form__left-tag {
+  margin-bottom: 6px;
+}
+
+.form__left-label {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.form__left-radio {
+  cursor: pointer;
+}
+
+.form__left-input {
+  padding: 6px 24px 6px 6px;
+  border: 1px solid #B4B4BE;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.form__left-select {
+  padding: 6px 24px 6px 6px;
+  border: 1px solid #B4B4BE;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form__left-item:last-child {
+  display: inline;
+}
+
+.form__left-btn {
+  max-width: 100px;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #3E6DDA;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  border-style: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form__right {
+  padding: 50px 20px;
+  width: 60%;
+}
+
+.form__right-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form__right-select {
+  margin: 15px 5px;
+  padding: 6px 24px 6px 6px;
+  border: 1px solid #B4B4BE;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form__right-table {
+  width: 100%;
+  text-align: left;
+  border-spacing: 0;
+  overflow: auto;
+}
+
+.form__right-table th, .form__right-table td {
+  padding: 8px;
+}
+
+.form__right-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.form__right-table td:last-child {
+  width: 5%;
+}
+
+.form__right-table-del {
+  display: none;
+  width: 18px;
+  height: 18px;
+  font-size: 10px;
+  color: #fff;
+  background-color: #f6265a;
+  border-style: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+tr:hover .form__right-table-del {
+  display: block;
+}
+/*# sourceMappingURL=main.css.map */
